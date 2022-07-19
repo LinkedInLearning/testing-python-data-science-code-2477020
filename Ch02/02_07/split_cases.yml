@@ -1,0 +1,17 @@
+- size: 10
+  chunk_size: 3
+  chunks:
+    - [0, 3]
+    - [3, 6]
+    - [6, 9]
+    - [9, 10]
+
+- size: 10
+  chunk_size: 10
+  chunks:
+    - [0, 10]
+
+- size: 10
+  chunk_size: 100
+  chunks:
+    - [0, 10]

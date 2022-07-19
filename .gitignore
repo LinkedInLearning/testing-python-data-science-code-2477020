@@ -2,3 +2,9 @@
 node_modules
 .tmp
 npm-debug.log
+
+# Python
+.hypothesis
+.ipynb_checkpoints
+.pytest_cache
+__pycache__

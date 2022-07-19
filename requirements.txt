@@ -1,0 +1,11 @@
+flask~=2.1
+hypothesis~=6.52
+ipython~=8.4
+jupyterlab~=3.4
+pandas~=1.4
+pandera~=0.11
+psutil!=5.9
+pytest~=7.1
+PyYAML~=6.0
+scikit-learn~=1.1
+testbook~=0.4
