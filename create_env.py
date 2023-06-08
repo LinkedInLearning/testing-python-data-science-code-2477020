@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from subprocess import run
-from sys import executable
+from sys import executable, platform
 
 
 def call(cmd):
@@ -11,6 +11,9 @@ def call(cmd):
 
 venv = '.venv'
 call([executable, '-m', 'venv', venv])
-py = f'{venv}/bin/python'
+if platform == 'win32':
+    py = f'{venv}/Scripts/python.exe'
+else:
+    py = f'{venv}/bin/python'
 call([py, '-m', 'pip', 'install', '--upgrade', 'pip'])
 call([py, '-m', 'pip', 'install', '-r', 'requirements.txt'])
